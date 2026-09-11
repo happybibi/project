@@ -1,457 +1,434 @@
-
-Shortcuts
-Home
-Mentions
-star
-Starred
-Direct messages
-
-DBT2-7-13_Nonthapat Plodkratok
-
-DBT_2-7-18 Satit SONGKRONH
-
-DBT_1-7-03 KITTIPAT KHARAVA
-Spaces
-Create a space to chat and collaborate
-Create or find a space
-Apps
-No apps yet
-Explore apps
-Home
-Unread
-
-check
-
-spool
-
-DBT2-7-13_Nonthapat Plodkratok
-1:11 PM
-You: Sent an image
-Press tab for more options.
-
-DBT_2-7-18 Satit SONGKRONH
-Aug 30
-https://canva.link/ycnvn34gvmmlasc
-Press tab for more options.
-
-DBT_1-7-03 KITTIPAT KHARAVA
-Aug 2
-You: Sent an attachment
-Press tab for more options.
-
-DBT_1-7-03 KITTIPAT KHARAVA
-kittipat.kha@sbac.ac.th
-2:16 PM GMT+7
-You created this chat on Sunday, Aug 2
-.
-Space update:
-History is on
-Messages sent with history on are saved
-Sunday, Aug 2
-You
-,
-Aug 2, 12:02 PM
-,
-.
-,Aug 2, 12:02 PM,
-INDEX.html
-,Aug 2, 12:02 PM,
-55555555.txt
-,Aug 2, 12:03 PM,
-You
-,
-Aug 2, 12:39 PM
-,
-INDEX.html
-Message viewed by everyone. Press tab to navigate to the read receipts list.
-
-,Aug 2, 12:39 PM,
-Message DBT_1-7-03 KITTIPAT KHARAVA
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roast & Relax Cafe</title>
-    <!-- นำเข้าฟอนต์ Google Font: Kanit -->
+    <title>Jaokhun Boat Noodle Restaurant</title>
+    <!-- นำเข้าฟอนต์ Kanit และ Poppins จาก Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ตั้งค่าพื้นฐาน --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Kanit', sans-serif;
-            scroll-behavior: smooth;
+        :root {
+            --primary-color: #8B0000;
+            --accent-color: #FF5722;
+            --gold-color: #FFC107;
+            --bg-light: #FAFAFA;
+            --text-dark: #2B2B2B;
         }
 
-        :root {
-            --primary-color: #6F4E37; /* สีน้ำตาลกาแฟ */
-            --secondary-color: #ECE0D1; /* สีครีมลาเต้ */
-            --bg-color: #FFFDF9; /* สีขาวนวล */
-            --text-dark: #3D2314; /* สีน้ำตาลเข้มเกือบดำ */
-            --text-light: #7D6B5D;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'Kanit', sans-serif;
         }
 
         body {
-            background-color: var(--bg-color);
+            background-color: var(--bg-light);
             color: var(--text-dark);
             line-height: 1.6;
         }
 
-        /* --- Navigation Bar --- */
+        /* --- Header / Navigation Bar (ตามแบบในภาพ) --- */
         header {
-            background-color: rgba(255, 255, 255, 0.95);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .navbar {
+            background-color: #cccccc; /* สีเทาสว่าง */
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            padding: 10px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: 600;
-            color: var(--primary-color);
-            text-decoration: none;
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
-        .nav-links {
-            list-style: none;
+        .brand-logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .brand-logo span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #222;
+            letter-spacing: 1px;
+        }
+
+        nav {
             display: flex;
             gap: 25px;
         }
 
-        .nav-links a {
+        nav a {
             text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 400;
-            transition: color 0.3s;
+            color: #333;
+            font-size: 1.05rem;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
-        .nav-links a:hover {
+        nav a:hover {
             color: var(--primary-color);
         }
 
-        /* --- Hero Section (หน้าแรก) --- */
-        .hero {
-            height: 100vh;
-            /* ใช้รูปภาพบรรยากาศคาเฟ่จาก Unsplash */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1600') no-repeat center center/cover;
+        /* --- Hero Section (ตามแบบในภาพ) --- */
+        .hero-container {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            /* ใส่ไฟล์ภาพพื้นหลังโต๊ะอาหารที่นี่ */
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+                        url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
+            justify-content: space-between;
+            padding: 0 8%;
+            overflow: hidden;
         }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-            font-weight: 600;
+        .hero-text {
+            max-width: 50%;
+            z-index: 2;
         }
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            font-weight: 300;
+        .hero-text h1 {
+            font-size: 2.8rem;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 
+                -2px -2px 0 #000,  
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000,
+                 3px  3px 8px rgba(0, 0, 0, 0.8);
+            line-height: 1.2;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: background 0.3s, transform 0.3s;
+        .logo-box-wrapper {
+            position: relative;
+            z-index: 2;
+            margin-right: 5%;
         }
 
-        .btn:hover {
-            background-color: #553c2a;
-            transform: translateY(-2px);
+        .white-frame {
+            border: 4px solid #ffffff;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
-        /* --- Section Common Layout --- */
-        section {
-            padding: 80px 20px;
+        .center-logo {
+            width: 190px;
+            height: 190px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .center-logo img {
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+
+        /* --- Highlights Section --- */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .highlight-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* --- Menu Section --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 60px auto;
+            padding: 0 20px;
         }
 
         .section-title {
             text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-            position: relative;
+            font-size: 2.2rem;
             color: var(--primary-color);
+            margin-bottom: 5px;
         }
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: var(--primary-color);
-            margin: 10px auto 0;
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
         }
 
-        /* --- About Section (เกี่ยวกับเรา) --- */
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .about-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .about-text p {
-            margin-bottom: 15px;
-            color: var(--text-light);
-        }
-
-        .about-img {
-            flex: 1;
-            min-width: 300px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* --- Menu Section (เมนูแนะนำ) --- */
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
         }
 
-        .menu-item {
-            background-color: white;
+        .menu-card {
+            background: white;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
         }
 
-        .menu-item:hover {
-            transform: translateY(-5px);
+        .menu-card:hover {
+            transform: translateY(-8px);
         }
 
-        .menu-item img {
+        .menu-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
 
-        .menu-info {
+        .menu-content {
             padding: 20px;
         }
 
-        .menu-name-price {
+        .menu-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
             margin-bottom: 10px;
         }
 
-        .menu-price {
-            color: var(--primary-color);
+        .menu-title {
+            font-size: 1.15rem;
             font-weight: 600;
         }
 
+        .menu-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
         .menu-desc {
-            font-size: 14px;
-            color: var(--text-light);
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 300;
         }
 
-        /* --- Contact Section (เวลาเปิด-ปิด & สถานที่) --- */
-        .contact-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .contact-info, .contact-time {
-            flex: 1;
-            min-width: 280px;
-            background-color: var(--secondary-color);
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        .contact-info h3, .contact-time h3 {
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-
-        /* --- Footer --- */
+        /* --- Map & Contact Footer --- */
         footer {
-            background-color: var(--text-dark);
+            background-color: #1A1A1A;
             color: white;
+            padding: 50px 20px 20px 20px;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            font-size: 14px;
         }
 
-        /* --- Responsive หน้าจอจอมือถือ --- */
+        .footer-info {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+
+        .footer-info h2 {
+            color: var(--gold-color);
+            margin-bottom: 15px;
+        }
+
+        .footer-info p {
+            margin-bottom: 8px;
+            color: #ccc;
+            font-weight: 300;
+        }
+
+        .map-box {
+            margin: 20px auto;
+            max-width: 600px;
+            height: 250px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none; /* เพื่อความง่ายในตัวอย่างนี้ ขอซ่อนเมนูบนมือถือก่อนครับ */
+            header {
+                flex-direction: column;
+                gap: 12px;
             }
-            .hero h1 {
-                font-size: 36px;
+            .hero-container {
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                padding: 40px 20px;
+                text-align: center;
+                gap: 25px;
             }
-            .hero p {
-                font-size: 16px;
+            .hero-text {
+                max-width: 100%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .logo-box-wrapper {
+                margin-right: 0;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Navigation -->
+    <!-- Header Navigation (มุมขวามี MENU, Contact us, Review, Map) -->
     <header>
-        <nav class="navbar">
-            <a href="#" class="logo">Roast & Relax</a>
-            <ul class="nav-links">
-                <li><a href="#">หน้าแรก</a></li>
-                <li><a href="#about">เกี่ยวกับเรา</a></li>
-                <li><a href="#menu">เมนูแนะนำ</a></li>
-                <li><a href="#contact">ติดต่อเรา</a></li>
-            </ul>
+        <div class="brand-logo">
+            <img src="logo.png" alt="Jaokhun Logo">
+            <span>Jaokhun</span>
+        </div>
+        <nav>
+            <a href="#menu">MENU</a>
+            <a href="#contact">Contact us</a>
+            <a href="#review">Review</a>
+            <a href="#map">Map</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>ยินดีต้อนรับสู่ Roast & Relax Cafe</h1>
-        <p>กลิ่นหอมของกาแฟคั่วสดใหม่ และบรรยากาศอบอุ่นที่รอต้อนรับคุณในทุกวัน</p>
-        <a href="#menu" class="btn">ดูเมนูของเรา</a>
+    <!-- Hero Banner Section -->
+    <section class="hero-container">
+        <div class="hero-text">
+            <h1>Jaokhun Boat Noodle<br>Restaurant.</h1>
+        </div>
+
+        <div class="logo-box-wrapper">
+            <div class="white-frame">
+                <div class="center-logo">
+                    <img src="logo.png" alt="ก๋วยเตี๋ยวเรือจ้าวคุณ">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">เรื่องราวของเรา</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>เราคัดสรรเมล็ดกาแฟสายพันธุ์ดีจากแหล่งปลูกที่ยั่งยืน นำมาคั่วด้วยความใส่ใจเพื่อดึงรสชาติที่ดีที่สุดออกมาในทุกๆ แก้ว</p>
-                <p>ไม่ว่าคุณจะต้องการพื้นที่นั่งทำงานเงียบๆ คุยธุรกิจ หรือพักผ่อนในวันหยุด ร้านของเราพร้อมมอบบรรยากาศสบายๆ เหมือนอยู่บ้าน พร้อมเบเกอรี่โฮมเมดที่อบใหม่ทุกเช้า</p>
-            </div>
-            <div class="about-img">
-                <!-- รูปภาพประกอบโซนเกี่ยวกับเรา -->
-                <img src="รวมมิตร.png" alt="บรรยากาศในร้าน">
-            </div>
+    <!-- Highlights Section -->
+    <section class="highlights" id="review">
+        <div class="highlight-card">
+            <h3>🍲 น้ำซุปสูตรเข้มข้น</h3>
+            <p>เคี่ยวสมุนไพรและเครื่องเทศไทยกว่า 10 ชนิด รสชาติเข้มข้น หอมกลมกล่อมทุกคำ</p>
+        </div>
+        <div class="highlight-card">
+            <h3>🥩 เนื้อนุ่ม คัดเกรด</h3>
+            <p>ใช้หมูคุโรบูตะและเนื้อโคขุนสไลซ์ หมักนุ่มกำลังดี สดใหม่วันต่อวัน</p>
+        </div>
+        <div class="highlight-card">
+            <h3>🥓 กากหมูเจียวทรงเครื่อง</h3>
+            <p>กากหมูเจียวสดใหม่ กรุบกรอบ โรยกระเทียมเจียวหอมๆ ทานคู่กับอะไรก็อร่อย</p>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu">
-        <h2 class="section-title">เมนูแนะนำ</h2>
+    <div class="container" id="menu">
+        <h2 class="section-title">เมนูโปรโมทยอดฮิต (MENU)</h2>
+        <p class="section-subtitle">คัดสรรเมนูเด็ดที่มาแล้วต้องสั่ง</p>
+
         <div class="menu-grid">
             
-            <!-- Item 1 -->
-            <div class="menu-item">
-                <img src="คอหมู.jpg" alt="Signature Latte">
-                <div class="menu-info">
-                    <div class="menu-name-price">
-                        <h4>Signature Latte</h4>
-                        <span class="menu-price">฿85</span>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80" alt="ก๋วยเตี๋ยวเรือหมูคุโรบูตะ" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <span class="menu-title">ก๋วยเตี๋ยวเรือหมูคุโรบูตะ</span>
+                        <span class="menu-price">69.-</span>
                     </div>
-                    <p class="menu-desc">ลาเต้รสนุ่มละมุน ผสมผสานนมสดแท้กับช็อตเอสเพรสโซ่เข้มข้นสูตรพิเศษ</p>
+                    <p class="menu-desc">หมูสไลซ์นุ่มๆ พร้อมตับสดและลูกชิ้นหมูแท้ ในน้ำซุปเข้มข้นรสเด็ด</p>
                 </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="menu-item">
-                <img src="ลาบ.jpg" alt="Dirty Coffee">
-                <div class="menu-info">
-                    <div class="menu-name-price">
-                        <h4>Dirty Coffee</h4>
-                        <span class="menu-price">฿95</span>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=600&q=80" alt="ก๋วยเตี๋ยวเรือเนื้อโคขุน" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <span class="menu-title">ก๋วยเตี๋ยวเรือเนื้อโคขุน</span>
+                        <span class="menu-price">79.-</span>
                     </div>
-                    <p class="menu-desc">นมสดเย็นจัดราดด้านบนด้วยช็อต Ristretto เข้มข้น ให้สัมผัสที่แยกชั้นชัดเจน</p>
+                    <p class="menu-desc">เนื้อโคขุนริบอายสไลซ์บาง นุ่มละมุน พร้อมเนื้อตุ๋นเปื่อยหอมกลิ่นเครื่องยาจีน</p>
                 </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="menu-item">
-                <img src="ส้มตำ.jpg" alt="Almond Croissant">
-                <div class="menu-info">
-                    <div class="menu-name-price">
-                        <h4>Almond Croissant</h4>
-                        <span class="menu-price">฿75</span>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=600&q=80" alt="ชุดหม้อไฟก๋วยเตี๋ยวเรือ" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <span class="menu-title">ชุดหม้อไฟจ้าวคุณ</span>
+                        <span class="menu-price">229.-</span>
                     </div>
-                    <p class="menu-desc">ครัวซองต์เนยสดฝรั่งเศส แป้งกรอบนอกนุ่มใน โรยหน้าด้วยอัลมอนด์สไลด์หอมมัน</p>
+                    <p class="menu-desc">จัดเต็มหม้อไฟเสิร์ฟร้อนๆ พร้อมชุดเนื้อ/หมูสไลซ์ ผักสด และเส้นเลือกได้ตามใจชอบ</p>
                 </div>
             </div>
- <!-- Item 4 -->
-            <div class="menu-item">
-                <img src="คอหมู.jpg" alt="Signature Latte">
-                <div class="menu-info">
-                    <div class="menu-name-price">
-                        <h4>Signature Latte</h4>
-                        <span class="menu-price">฿85</span>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" alt="กากหมูเจียวทรงเครื่อง" class="menu-img">
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <span class="menu-title">กากหมูเจียวทรงเครื่อง</span>
+                        <span class="menu-price">35.-</span>
                     </div>
-                    <p class="menu-desc">ลาเต้รสนุ่มละมุน ผสมผสานนมสดแท้กับช็อตเอสเพรสโซ่เข้มข้นสูตรพิเศษ</p>
+                    <p class="menu-desc">กากหมูแท้เจียวใหม่ทุกเช้า กรุบกรอบ ไม่อมน้ำมัน ทานแกล้มก๋วยเตี๋ยวฟินสุดๆ</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact us & Map Section -->
+    <footer id="contact">
+        <div class="footer-info">
+            <h2>ร้านก๋วยเตี๋ยวเรือจ้าวคุณ (Contact us)</h2>
+            <p>📍 พิกัดร้าน: (ระบุที่ตั้งร้านของคุณ)</p>
+            <p>⏰ เวลาเปิด-ปิด: เปิดบริการทุกวัน 09:00 - 18:00 น.</p>
+            <p>📞 โทรศัพท์: 08X-XXX-XXXX</p>
+            <p>📱 Facebook: <a href="https://www.facebook.com/JaoKhunNoodle" target="_blank" style="color: var(--gold-color);">JaoKhunNoodle</a></p>
+            
+            <!-- Map Area -->
+            <div id="map" style="margin-top: 30px;">
+                <h3 style="color: white; margin-bottom: 10px;">แผนที่ร้าน (Map)</h3>
+                <div class="map-box">
+                    <!-- สามารถนำ iframe แผนที่จาก Google Maps มาวางตรงนี้ได้ -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6!2d100.5!3d13.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQyJzAwLjAiTiAxMDDCsDMwJzAwLjAiRQ!5e0!3m2!1sth!2sth!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">แวะมาหาเรา</h2>
-        <div class="contact-container">
-            <div class="contact-time">
-                <h3>🕒 เวลาทำการ</h3>
-                <p><strong>วันจันทร์ - วันศุกร์:</strong> 07:00 น. - 18:00 น.</p>
-                <p><strong>วันเสาร์ - วันอาทิตย์:</strong> 08:00 น. - 19:00 น.</p>
-            </div>
-            <div class="contact-info">
-                <h3>📍 สถานที่ตั้ง & ติดต่อ</h3>
-                <p>123 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพฯ</p>
-                <p><strong>เบอร์โทร:</strong> 02-xxx-xxxx</p>
-                <p><strong>Instagram:</strong> @roastandrelax</p>
-            </div>
+        <div class="copyright">
+            &copy; 2026 JaoKhunNoodle. All rights reserved.
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Roast & Relax Cafe. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
-apps-fileview.texmex_20260826.10_p0
-INDEX.html
-Displaying 55555555.txt.
