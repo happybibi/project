@@ -88,7 +88,7 @@
             height: 450px;
             /* ใส่ไฟล์ภาพพื้นหลังโต๊ะอาหารที่นี่ */
             background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
-                        url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+                        url('bg.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -308,22 +308,22 @@
 </head>
 <body>
 
-    <!-- Header Navigation (มุมขวามี MENU, Contact us, Review, Map) -->
+    <!-- Header Navigation (มุมขวามี Main, Contact us, Menu, Map) -->
     <header>
         <div class="brand-logo">
-            <img src="logo.png" alt="Jaokhun Logo">
+            <img src="โลโก้จ้าวคุณ.jpg" alt="Jaokhun Logo">
             <span>Jaokhun</span>
         </div>
         <nav>
-            <a href="#menu">MENU</a>
+            <a href="#main">Main</a>
             <a href="#contact">Contact us</a>
-            <a href="#review">Review</a>
+            <a href="#menu">Menu</a>
             <a href="#map">Map</a>
         </nav>
     </header>
 
-    <!-- Hero Banner Section -->
-    <section class="hero-container">
+    <!-- Hero Banner Section (ID: main) -->
+    <section class="hero-container" id="main">
         <div class="hero-text">
             <h1>Jaokhun Boat Noodle<br>Restaurant.</h1>
         </div>
@@ -331,7 +331,7 @@
         <div class="logo-box-wrapper">
             <div class="white-frame">
                 <div class="center-logo">
-                    <img src="logo.png" alt="ก๋วยเตี๋ยวเรือจ้าวคุณ">
+                    <img src="โลโก้จ้าวคุณ.jpg" alt="ก๋วยเตี๋ยวเรือจ้าวคุณ">
                 </div>
             </div>
         </div>
@@ -348,8 +348,8 @@
             <p>ใช้หมูคุโรบูตะและเนื้อโคขุนสไลซ์ หมักนุ่มกำลังดี สดใหม่วันต่อวัน</p>
         </div>
         <div class="highlight-card">
-            <h3>🥓 กากหมูเจียวทรงเครื่อง</h3>
-            <p>กากหมูเจียวสดใหม่ กรุบกรอบ โรยกระเทียมเจียวหอมๆ ทานคู่กับอะไรก็อร่อย</p>
+            <h3>🥓 เมนูข้าว</h3>
+            <p>เมนูข้าวสไตล์ไทย ผสมผสามหลายสไตล์เข้าด้วยกัน ชวนลิ้มลอง</p>
         </div>
     </section>
 
@@ -361,46 +361,46 @@
         <div class="menu-grid">
             
             <div class="menu-card">
-                <img src="assets/images/482322171_970508391959187_1044887371920170582_n.jpg" alt="เมนูข้าว" class="menu-img">
+                <img src="เมนูก๋วยเตี๋ยวเรือ.jpg" alt="ก๋วยเตี๋ยวเรือจ้าวคุณ" class="menu-img">
                 <div class="menu-content">
                     <div class="menu-header">
-                        <span class="menu-title">เมนูข้าว</span>
-                        <span class="menu-price">69.-</span>
+                        <span class="menu-title">ก๋วยเตี๋ยวเรือจ้าวคุณ</span>
+                        <span class="menu-price">เริ่มต้นที่ 69.-</span>
                     </div>
                     <p class="menu-desc">หมูสไลซ์นุ่มๆ พร้อมตับสดและลูกชิ้นหมูแท้ ในน้ำซุปเข้มข้นรสเด็ด</p>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=600&q=80" alt="ก๋วยเตี๋ยวเรือเนื้อโคขุน" class="menu-img">
+                <img src="เมนูหม้อไฟ.jpg" alt="ก๋วยเตี๋ยวหม้อไฟ" class="menu-img">
                 <div class="menu-content">
                     <div class="menu-header">
-                        <span class="menu-title">ก๋วยเตี๋ยวเรือเนื้อโคขุน</span>
-                        <span class="menu-price">79.-</span>
+                        <span class="menu-title">ก๋วยเตี๋ยวเรือหม้อไฟ</span>
+                        <span class="menu-price">เริ่มต้นที่ 199.-</span>
                     </div>
                     <p class="menu-desc">เนื้อโคขุนริบอายสไลซ์บาง นุ่มละมุน พร้อมเนื้อตุ๋นเปื่อยหอมกลิ่นเครื่องยาจีน</p>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=600&q=80" alt="ชุดหม้อไฟก๋วยเตี๋ยวเรือ" class="menu-img">
+                <img src="เมนูข้าว.jpg" alt="เมนูข้าว" class="menu-img">
                 <div class="menu-content">
                     <div class="menu-header">
-                        <span class="menu-title">ชุดหม้อไฟจ้าวคุณ</span>
-                        <span class="menu-price">229.-</span>
+                        <span class="menu-title">เมนูข้าว</span>
+                        <span class="menu-price">เริ่มต้นที่ 79.-</span>
                     </div>
-                    <p class="menu-desc">จัดเต็มหม้อไฟเสิร์ฟร้อนๆ พร้อมชุดเนื้อ/หมูสไลซ์ ผักสด และเส้นเลือกได้ตามใจชอบ</p>
+                    <p class="menu-desc">เมนูข้าวสไตล์ไทย รสชาติจัดจ้าน หลากหลายเมนู</p>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" alt="กากหมูเจียวทรงเครื่อง" class="menu-img">
+                <img src="เมนูเครื่องดื่ม.PNG" alt="เมนูเครื่องดื่ม" class="menu-img">
                 <div class="menu-content">
                     <div class="menu-header">
-                        <span class="menu-title">กากหมูเจียวทรงเครื่อง</span>
-                        <span class="menu-price">35.-</span>
+                        <span class="menu-title">เมนูเครื่องดื่ม</span>
+                        <span class="menu-price">เริ่มต้นที่ 12.-</span>
                     </div>
-                    <p class="menu-desc">กากหมูแท้เจียวใหม่ทุกเช้า กรุบกรอบ ไม่อมน้ำมัน ทานแกล้มก๋วยเตี๋ยวฟินสุดๆ</p>
+                    <p class="menu-desc">เครื่องดื่มหลากหลาย สไตล์ไทย </p>
                 </div>
             </div>
 
@@ -411,9 +411,9 @@
     <footer id="contact">
         <div class="footer-info">
             <h2>ร้านก๋วยเตี๋ยวเรือจ้าวคุณ (Contact us)</h2>
-            <p>📍 พิกัดร้าน: (ระบุที่ตั้งร้านของคุณ)</p>
+            <p>📍 พิกัดร้าน: (190/1 ถนน สายลวด ปากซอย 8, 10270)</p>
             <p>⏰ เวลาเปิด-ปิด: เปิดบริการทุกวัน 09:00 - 18:00 น.</p>
-            <p>📞 โทรศัพท์: 08X-XXX-XXXX</p>
+            <p>📞 โทรศัพท์: 094 449 2246</p>
             <p>📱 Facebook: <a href="https://www.facebook.com/JaoKhunNoodle" target="_blank" style="color: var(--gold-color);">JaoKhunNoodle</a></p>
             
             <!-- Map Area -->
